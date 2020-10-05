@@ -1,0 +1,6 @@
+y:=x^2:     
+interface(plotdevice = jpeg): 
+filena:=[seq(`plot` || i || `.jpeg` , i=1)];
+plotname := filena [1] ;
+plotsetup (jpeg, plotoutput = plotname);
+plot (y, x=-3 .. 3);
